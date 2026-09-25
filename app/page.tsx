@@ -66,6 +66,78 @@ const profileEvidence = [
   },
 ];
 
+const experiences = [
+  {
+    period: '2026.06—至今',
+    company: '北京智乐活科技有限公司',
+    role: 'AI提效部门实习',
+    summary: '把儿童分级学习要求转成可执行的 AI 生产规则，推动工具化交付。',
+    details: [
+      '负责“适趣环球AI英语动画”分级动画剧本与分镜的AI自动化生产，将儿童分级学习要求转为可执行的Prompt规则与内容验收标准，以每组4个目标词、6篇短剧本组织批量生成。',
+      '设计并整合词汇覆盖检测、故事生产、故事板3类网页工具，封装为剧本生产Skill，把个人经验固化为团队可调用的能力。',
+      '沉淀角色、反转机制、案例、趣味细节4类可复用知识资产，作为生成时的上下文供给，替代每次重新描述角色与规则。',
+      '对比成稿词频、对白自然度、画面可懂性与单集时长，定位“词频达标但表达生硬”“镜头压缩”等失败模式；调整故事与语言设计分工、修订规则并设置上游重写路径，建立“生成→审核→重写”人工在环流程，内容经审核后交付动画生产组，已投入实际制作。',
+    ],
+  },
+  {
+    period: '2025.11—2026.06',
+    company: '南京滨江公园管理有限公司',
+    role: '研究生校外实践',
+    summary: '负责左岸花海景观方案从设计到养护的完整落地，练习用约束条件做方案与交付。',
+    details: [
+      '负责左岸花海景观方案设计与落地，覆盖“方案—采购—施工—养护—科普”全流程；针对76个花池、109种花海适用植物，按花期衔接、群落层次与观赏动线完成品种筛选与平面配植，输出配植图与种植说明。',
+      '设计低成本配植策略，以“低管养”为目标做品种比选与用量测算，用宿根花卉、乡土植物替代高成本时令花坛。',
+      '驻场跟进放线、整地、种植与验收，沉淀《左岸花海养护操作手册》《左岸花海植物品种库》等可复用资料。',
+    ],
+  },
+  {
+    period: '2024.04—2026.05',
+    company: '南京农业大学规划设计研究院',
+    role: '项目策划与核心成员',
+    summary: '在多场景规划项目中完成调研、需求梳理、方案汇报与现场协作，把多方诉求整理成可执行任务。',
+    details: [
+      '作为核心成员参与8项乡村更新、产业规划与人居环境设计项目，承担政府单位对接、实地调研与方案汇报。',
+      '完成现场踏勘、村民访谈与基础资料收集，将多方诉求整理为可执行的规划条件与设计任务书。',
+      '参与图纸绘制与成果编制，按规划、设计、施工不同阶段输出图件与文本，配合完成多轮方案汇报与修改。',
+      '参与乡村改造与产业规划类项目：安徽泗县曙光村改造、溧阳市乡村产业发展规划、常州市设施大棚与看护房整治提升、古县街道产业规划。',
+      '参与景观与设施设计类项目：甘泉湖研学草莓园规划设计、五桥板块高标准农田大地艺术设计与施工、溧阳市百家塘玉米迷宫设计、张圩社区微绿地改造。',
+      '覆盖从概念方案、施工图到现场配合的完整流程，积累乡村、农田、研学园区、社区绿地等多场景设计经验。',
+    ],
+  },
+  {
+    period: '2024.09—2025.03',
+    company: '南京绘梦起航科技培训有限公司',
+    role: '风景园林考研讲师',
+    summary: '把复杂知识拆成可复用的课程结构，持续用反馈迭代交付方式。',
+    details: [
+      '负责风景园林考研专业课程的授课与教研，梳理考点体系与知识框架，独立完成全套课程资料的编写与迭代。',
+      '搭建标准化授课体系，明确各阶段教学目标、课时安排与练习配置，形成可复用的课程模板。',
+      '承担课程组织与教学交付，完成作业与考卷批改、学习进度跟进与答疑，根据学生反馈调整讲解重点。',
+    ],
+  },
+  {
+    period: '2024.04—2024.09',
+    company: 'Chill trip南京地陪项目',
+    role: '小红书运营策划',
+    summary: '串联内容种草、私域承接与线下服务，验证从内容到业务交付的完整链路。',
+    details: [
+      '负责小红书账号内容策划与选题，结合南京本地景点与出行场景输出图文内容，把控标题、封面与发布节奏。',
+      '运营私域社群，承接内容带来的咨询并维护用户关系，提升复访与转介绍。',
+      '提供定制化旅行方案及线下接待客户，串联“内容种草—私域承接—线下服务”链路，衔接线上内容与线下交付。',
+      '拓展外部商家合作，对接民宿、包车服务等本地供给方，建立合作与结算方式，沉淀可复用的商家资源。',
+    ],
+  },
+  {
+    period: '2024.04—2024.07',
+    company: '南京幻想家剧本杀店',
+    role: 'DM：剧本杀主持人、剧本杀情节演绎者',
+    summary: '通过现场主持、角色演绎与节奏控制，训练故事结构、用户观察与现场应变能力。',
+    details: [
+      '负责剧本杀流程主持、角色演绎、线索推进与现场秩序控制，根据玩家反馈调整节奏与引导方式。',
+    ],
+  },
+];
+
 const projects = [
   {
     number: '01',
@@ -287,8 +359,41 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="section experience-section" id="experience" aria-labelledby="experience-title">
+        <div className="section-kicker"><span>02</span> EXPERIENCE</div>
+        <div className="section-heading-row">
+          <div>
+            <p className="eyebrow">实习与实践</p>
+            <h2 id="experience-title">把真实场景里的问题，做成可交付的产品与项目。</h2>
+          </div>
+          <p className="section-intro">点击每段经历查看详细内容。每一次实践都在训练同一件事：从复杂现场提炼目标、流程与可复用的方法。</p>
+        </div>
+
+        <div className="experience-list" aria-label="实习与实践经历">
+          {experiences.map((experience, index) => (
+            <details className="experience-item" key={`${experience.period}-${experience.company}`} open={index === 0}>
+              <summary className="experience-summary">
+                <span className="experience-index">{String(index + 1).padStart(2, '0')}</span>
+                <span className="experience-meta">
+                  <span className="experience-period">{experience.period}</span>
+                  <strong>{experience.company}</strong>
+                  <em>{experience.role}</em>
+                </span>
+                <span className="experience-toggle" aria-hidden="true">↘</span>
+              </summary>
+              <div className="experience-details">
+                <p className="experience-summary-copy">{experience.summary}</p>
+                <ul>
+                  {experience.details.map((detail) => <li key={detail}>{detail}</li>)}
+                </ul>
+              </div>
+            </details>
+          ))}
+        </div>
+      </section>
+
       <section className="section capability-section" id="capabilities" aria-labelledby="capability-title">
-        <div className="section-kicker"><span>02</span> SKILLS</div>
+        <div className="section-kicker"><span>03</span> SKILLS</div>
         <div className="section-heading-row">
           <div>
             <p className="eyebrow">产品能力</p>
@@ -310,23 +415,11 @@ export default function Home() {
               </article>
             ))}
           </div>
-          <div className="capability-visual" aria-label="产品路线图形象">
-            <div className="route-card route-card-top"><span />判断机会</div>
-            <div className="route-card route-card-middle"><span />定义方案</div>
-            <div className="route-card route-card-bottom"><span />验证上线</div>
-            <Image
-              src="/images/capability-roadmap.png"
-              width={936}
-              height={1664}
-              sizes="(max-width: 520px) 88vw, (max-width: 1080px) 55vw, 460px"
-              alt="韩星展示产品路线图"
-            />
-          </div>
         </div>
       </section>
 
       <section className="section project-section" id="projects" aria-labelledby="project-title">
-        <div className="section-kicker"><span>03</span> PROJECTS</div>
+        <div className="section-kicker"><span>04</span> PROJECTS</div>
         <div className="section-heading-row">
           <div>
             <p className="eyebrow">AI 项目</p>
@@ -386,7 +479,7 @@ export default function Home() {
       </section>
 
       <section className="section design-section" id="design" aria-labelledby="design-title">
-        <div className="section-kicker"><span>04</span> DESIGN</div>
+        <div className="section-kicker"><span>05</span> DESIGN</div>
         <div className="section-heading-row">
           <div>
             <p className="eyebrow">AIGC 设计作品</p>
@@ -429,7 +522,7 @@ export default function Home() {
       </section>
 
       <section className="section contact-area" id="contact" aria-labelledby="contact-title">
-        <div className="section-kicker"><span>05</span> CONTACT</div>
+        <div className="section-kicker"><span>06</span> CONTACT</div>
         <div className="contact-section">
           <div className="contact-decoration" aria-hidden="true"><i /><i /><i /></div>
           <p className="eyebrow">保持联系</p>
