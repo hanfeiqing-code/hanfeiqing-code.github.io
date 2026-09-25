@@ -284,8 +284,8 @@ export default function Home() {
             <span>视觉产品化</span>
           </div>
           <p className="hero-summary">
-            我从机会判断、竞品分析与需求拆解出发，定义产品定位、PRD 与交互流程；
-            再把 RAG、Agent、ASR 到 TTS 链路做成可验证、可复用的产品方案。
+            学习能力强、能抗压且适应快。从风景园林到内容运营再到 AI 工具落地，多条业务线都能独立交付；
+            擅长把模糊需求拆成可执行规则并沉淀为团队可复用工具；关注 AI 产品趋势，能独立思考 AI 如何让产品变得更好。
           </p>
           <div className="hero-actions" aria-label="首屏操作">
             <a className="button button-primary" href="#projects">查看项目 <b aria-hidden="true">↗</b></a>
