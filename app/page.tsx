@@ -147,7 +147,8 @@ const projects = [
     solution: '将质量要求拆成 Prompt 规则与验收标准，搭建词汇覆盖检测、故事生产、故事板 3 类网页工具，并串联生成→审核→重写。',
     output: '沉淀 4 类可复用知识库与 Skill，已进入真实制作流程；失败样例会回流到上游规则。',
     role: 'AI 提效实习 · 产品 / 工作流设计',
-    image: null,
+    image: '/projects/ai-english-workbench.png',
+    href: 'https://reversal-comedy-workbench.simple-mark865.chatgpt.site',
     tags: ['Prompt 规则', 'Skill', '人工在环'],
   },
   {
