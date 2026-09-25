@@ -147,7 +147,7 @@ const projects = [
     solution: '将质量要求拆成 Prompt 规则与验收标准，搭建词汇覆盖检测、故事生产、故事板 3 类网页工具，并串联生成→审核→重写。',
     output: '沉淀 4 类可复用知识库与 Skill，已进入真实制作流程；失败样例会回流到上游规则。',
     role: 'AI 提效实习 · 产品 / 工作流设计',
-    image: '/projects/study-workflow.webp',
+    image: null,
     tags: ['Prompt 规则', 'Skill', '人工在环'],
   },
   {
@@ -158,7 +158,7 @@ const projects = [
     solution: '设计语音优先链路：ASR → 意图识别与槽位补全 → RAG 检索重排 → Agent 工具调用与播放 → TTS。',
     output: '覆盖搜索、澄清、播放与异常场景，并预留任务成功率、检索命中率、时延等验证指标。',
     role: '产品负责人 · AI 应用方案',
-    image: '/projects/comfyui-nodes.webp',
+    image: null,
     tags: ['ASR / TTS', 'RAG', 'Agent'],
   },
   {
@@ -430,7 +430,7 @@ export default function Home() {
 
         <div className="project-grid">
           {projects.map((project) => {
-            const cover = (
+            const cover = project.image ? (
               <div className="project-cover">
                 <Image
                   src={project.image}
@@ -442,11 +442,11 @@ export default function Home() {
                 <span className="project-category">{project.category}</span>
                 {project.href && <span className="project-link-badge">打开在线产品 ↗</span>}
               </div>
-            );
+            ) : null;
 
             return (
               <article className="project-card" key={project.number}>
-                {project.href ? (
+                {project.href && cover ? (
                   <a
                     className="project-cover-link"
                     href={project.href}
@@ -457,7 +457,8 @@ export default function Home() {
                     {cover}
                   </a>
                 ) : cover}
-                <div className="project-body">
+                <div className={`project-body${cover ? '' : ' project-body-no-cover'}`}>
+                  {!cover && <div className="project-text-mark"><span>{project.number}</span><span>{project.category}</span></div>}
                   <p className="project-role">{project.role}</p>
                   <h3>{project.title}</h3>
                   <div className="project-evidence">
