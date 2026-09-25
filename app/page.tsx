@@ -356,44 +356,42 @@ export default function Home() {
               </article>
             ))}
           </div>
-        </div>
-      </section>
-
-      <section className="section experience-section" id="experience" aria-labelledby="experience-title">
-        <div className="section-kicker"><span>02</span> EXPERIENCE</div>
-        <div className="section-heading-row">
-          <div>
-            <p className="eyebrow">实习与实践</p>
-            <h2 id="experience-title">把真实场景里的问题，做成可交付的产品与项目。</h2>
-          </div>
-          <p className="section-intro">点击每段经历查看详细内容。每一次实践都在训练同一件事：从复杂现场提炼目标、流程与可复用的方法。</p>
-        </div>
-
-        <div className="experience-list" aria-label="实习与实践经历">
-          {experiences.map((experience, index) => (
-            <details className="experience-item" key={`${experience.period}-${experience.company}`} open={index === 0}>
-              <summary className="experience-summary">
-                <span className="experience-index">{String(index + 1).padStart(2, '0')}</span>
-                <span className="experience-meta">
-                  <span className="experience-period">{experience.period}</span>
-                  <strong>{experience.company}</strong>
-                  <em>{experience.role}</em>
-                </span>
-                <span className="experience-toggle" aria-hidden="true">↘</span>
-              </summary>
-              <div className="experience-details">
-                <p className="experience-summary-copy">{experience.summary}</p>
-                <ul>
-                  {experience.details.map((detail) => <li key={detail}>{detail}</li>)}
-                </ul>
+          <div className="experience-block" id="experience" aria-labelledby="experience-title">
+            <div className="section-heading-row">
+              <div>
+                <p className="eyebrow">实习与实践</p>
+                <h2 id="experience-title">把真实场景里的问题，做成可交付的产品与项目。</h2>
               </div>
-            </details>
-          ))}
+              <p className="section-intro">点击每段经历查看详细内容。每一次实践都在训练同一件事：从复杂现场提炼目标、流程与可复用的方法。</p>
+            </div>
+
+            <div className="experience-list" aria-label="实习与实践经历">
+              {experiences.map((experience, index) => (
+                <details className="experience-item" key={`${experience.period}-${experience.company}`} open={index === 0}>
+                  <summary className="experience-summary">
+                    <span className="experience-index">{String(index + 1).padStart(2, '0')}</span>
+                    <span className="experience-meta">
+                      <span className="experience-period">{experience.period}</span>
+                      <strong>{experience.company}</strong>
+                      <em>{experience.role}</em>
+                    </span>
+                    <span className="experience-toggle" aria-hidden="true">↘</span>
+                  </summary>
+                  <div className="experience-details">
+                    <p className="experience-summary-copy">{experience.summary}</p>
+                    <ul>
+                      {experience.details.map((detail) => <li key={detail}>{detail}</li>)}
+                    </ul>
+                  </div>
+                </details>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
       <section className="section capability-section" id="capabilities" aria-labelledby="capability-title">
-        <div className="section-kicker"><span>03</span> SKILLS</div>
+        <div className="section-kicker"><span>02</span> SKILLS</div>
         <div className="section-heading-row">
           <div>
             <p className="eyebrow">产品能力</p>
@@ -419,7 +417,7 @@ export default function Home() {
       </section>
 
       <section className="section project-section" id="projects" aria-labelledby="project-title">
-        <div className="section-kicker"><span>04</span> PROJECTS</div>
+        <div className="section-kicker"><span>03</span> PROJECTS</div>
         <div className="section-heading-row">
           <div>
             <p className="eyebrow">AI 项目</p>
@@ -480,7 +478,7 @@ export default function Home() {
       </section>
 
       <section className="section design-section" id="design" aria-labelledby="design-title">
-        <div className="section-kicker"><span>05</span> DESIGN</div>
+        <div className="section-kicker"><span>04</span> DESIGN</div>
         <div className="section-heading-row">
           <div>
             <p className="eyebrow">AIGC 设计作品</p>
@@ -523,7 +521,7 @@ export default function Home() {
       </section>
 
       <section className="section contact-area" id="contact" aria-labelledby="contact-title">
-        <div className="section-kicker"><span>06</span> CONTACT</div>
+        <div className="section-kicker"><span>05</span> CONTACT</div>
         <div className="contact-section">
           <div className="contact-decoration" aria-hidden="true"><i /><i /><i /></div>
           <p className="eyebrow">保持联系</p>

@@ -844,8 +844,11 @@ body {
   line-height: 1.75;
 }
 
-.experience-section {
-  padding-top: 56px;
+.experience-block {
+  grid-column: 1 / -1;
+  margin-top: 38px;
+  padding-top: 28px;
+  border-top: 1px dashed #cdbfae;
 }
 
 .experience-list {
