@@ -184,6 +184,7 @@ const projects = [
     output: '形成 PRD、功能清单、交互逻辑、代码实现与使用说明，节点可嵌入现有工作流。',
     role: '独立产品与开发',
     image: '/projects/comfyui-nodes.webp',
+    href: aigcPortfolioUrl,
     tags: ['ComfyUI', 'Python', '节点产品'],
   },
   {
@@ -195,6 +196,7 @@ const projects = [
     output: '交付 KV、海报、专题页与视觉规范；作品集复盘口径：单件素材约 4–6 小时降至约 1 小时。',
     role: '产品与设计负责人',
     image: '/projects/safemeal-system.webp',
+    href: aigcPortfolioUrl,
     tags: ['竞品分析', 'ComfyUI', '视觉规范'],
   },
   {
@@ -206,6 +208,7 @@ const projects = [
     output: '形成产品策略、训练方案、三视图、表情 / 动作 / 周边资产及商业化路径。',
     role: '产品与设计负责人',
     image: '/projects/xiaomei-ip.webp',
+    href: aigcPortfolioUrl,
     tags: ['IP 产品化', 'LoRA', '资产体系'],
   },
   {
@@ -218,7 +221,7 @@ const projects = [
     role: '产品负责人 · AI 应用方案',
     image: null,
     tags: ['ASR / TTS', 'RAG', 'Agent'],
-    hideCaseStatus: true,
+    href: aigcPortfolioUrl,
   },
   {
     number: '08',
@@ -229,6 +232,7 @@ const projects = [
     output: '提升图文策划与排版效率，形成可快速复用的文旅研学设计体系。',
     role: '产品 + 设计负责人',
     image: '/projects/study-workflow.webp',
+    href: aigcPortfolioUrl,
     tags: ['GPT + Coze', 'ComfyUI', '组件库'],
   },
 ];
@@ -492,9 +496,13 @@ export default function Home() {
                   <div className="tag-row project-tags">
                     {project.tags.map((tag) => <span key={tag}>{tag}</span>)}
                   </div>
-                  {!('hideCaseStatus' in project && project.hideCaseStatus) && (
+                  {project.href && !cover ? (
+                    <a className="case-status case-status-link" href={project.href} target="_blank" rel="noreferrer">
+                      {project.href === aigcPortfolioUrl ? '打开 AIGC 作品集' : '打开在线产品'} <b aria-hidden="true">→</b>
+                    </a>
+                  ) : (
                     <span className="case-status">
-                      {project.href ? '点击图片打开在线产品' : '案例详情持续补充中'} <b aria-hidden="true">→</b>
+                      {project.href === aigcPortfolioUrl ? '点击图片打开 AIGC 作品集' : project.href ? '点击图片打开在线产品' : '案例详情持续补充中'} <b aria-hidden="true">→</b>
                     </span>
                   )}
                 </div>
