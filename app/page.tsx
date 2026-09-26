@@ -208,6 +208,29 @@ const projects = [
     image: '/projects/xiaomei-ip.webp',
     tags: ['IP 产品化', 'LoRA', '资产体系'],
   },
+  {
+    number: '07',
+    category: 'AI 应用',
+    title: '车载智能影音搜索',
+    problem: '车内场景下用户希望用自然语言快速找到内容，搜索、澄清、播放与异常需要形成闭环。',
+    solution: '设计语音优先链路：ASR → 意图识别与槽位补全 → RAG 检索重排 → Agent 工具调用与播放 → TTS。',
+    output: '覆盖搜索、澄清、播放与异常场景，并预留任务成功率、检索命中率、时延等验证指标。',
+    role: '产品负责人 · AI 应用方案',
+    image: null,
+    tags: ['ASR / TTS', 'RAG', 'Agent'],
+    hideCaseStatus: true,
+  },
+  {
+    number: '08',
+    category: 'AI 自动化策划',
+    title: 'AI 自动化策划工作流',
+    problem: '研学、文旅策划周期长、图文协作成本高；系列物料风格难统一，重复排版消耗大量人力。',
+    solution: '搭建 GPT + Coze 工作流 + ComfyUI + 模块化组件库的图文策划流水线，串联文案生成、配图生成与版式排版。',
+    output: '提升图文策划与排版效率，形成可快速复用的文旅研学设计体系。',
+    role: '产品 + 设计负责人',
+    image: '/projects/study-workflow.webp',
+    tags: ['GPT + Coze', 'ComfyUI', '组件库'],
+  },
 ];
 
 const designWorks = [
@@ -469,9 +492,11 @@ export default function Home() {
                   <div className="tag-row project-tags">
                     {project.tags.map((tag) => <span key={tag}>{tag}</span>)}
                   </div>
-                  <span className="case-status">
-                    {project.href ? '点击图片打开在线产品' : '案例详情持续补充中'} <b aria-hidden="true">→</b>
-                  </span>
+                  {!('hideCaseStatus' in project && project.hideCaseStatus) && (
+                    <span className="case-status">
+                      {project.href ? '点击图片打开在线产品' : '案例详情持续补充中'} <b aria-hidden="true">→</b>
+                    </span>
+                  )}
                 </div>
               </article>
             );
