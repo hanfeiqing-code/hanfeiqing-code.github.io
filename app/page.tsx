@@ -148,7 +148,7 @@ const projects = [
     output: '沉淀 4 类可复用知识库与 Skill，已进入真实制作流程；失败样例会回流到上游规则。',
     role: 'AI 提效实习 · 产品 / 工作流设计',
     image: '/projects/ai-english-workbench.png',
-    href: 'https://reversal-comedy-workbench.simple-mark865.chatgpt.site',
+    href: 'https://hanfeiqing-code.github.io/reversal-comedy-workbench/',
     tags: ['Prompt 规则', 'Skill', '人工在环'],
   },
   {
