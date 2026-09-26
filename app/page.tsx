@@ -318,7 +318,7 @@ export default function Home() {
           </p>
           <div className="hero-actions" aria-label="首屏操作">
             <a className="button button-primary" href="#projects">查看项目 <b aria-hidden="true">↗</b></a>
-            <a className="button button-secondary" href="/resume-2026-09-16.docx" download>下载简历 <b aria-hidden="true">↓</b></a>
+            <a className="button button-secondary" href="/resume-tencent-product-manager.pdf" download>下载简历 <b aria-hidden="true">↓</b></a>
           </div>
         </div>
 
